@@ -1,0 +1,97 @@
+<!-- File name /index.html 
+Version 1 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación interactiva para aprender raíces perfectas mediante multiplicaciones">
+    <meta name="keywords" content="raíces perfectas, matemáticas, multiplicación, raíz cuadrada, aprendizaje">
+    <meta name="author" content="Raíces Perfectas">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Raíces Perfectas">
+    <meta property="og:description" content="Aprende raíces perfectas de forma interactiva">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raicesperfectas.com">
+    <meta property="og:image" content="img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Raíces Perfectas">
+    <meta name="twitter:description" content="Aprende raíces perfectas de forma interactiva">
+    <meta name="twitter:image" content="img/twitter-image.jpg">
+    <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <title>Raíces Perfectas</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://raicesperfectas.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/raices-perfectas.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/raices-perfectas.js"></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+    
+    <header class="container-basic-border">
+        <h1>Raíces Perfectas</h1>
+        <label class="theme-switch" for="checkbox" title="Cambiar modo claro/oscuro" aria-label="Cambiar modo oscuro">
+            <input type="checkbox" id="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <main id="main-content" class="container-basic-border">
+        <section id="intro-section" class="container-basic-border">
+            <h2>Aprende Raíces Perfectas</h2>
+            <p>Esta aplicación te ayudará a aprender las raíces perfectas a través de multiplicaciones y raíces cuadradas.</p>
+            <p>Responde correctamente a todas las preguntas para dominar las raíces perfectas.</p>
+            <button id="start-btn" class="btn-primary">Comenzar</button>
+        </section>
+        
+        <section id="multiplication-section" class="container-basic-border hidden">
+            <h2>Multiplicaciones</h2>
+            <div id="multiplication-questions"></div>
+            <div class="button-container">
+                <button id="check-multiplication-btn" class="btn-primary">Verificar</button>
+            </div>
+        </section>
+
+        <section id="square-root-section" class="container-basic-border hidden">
+            <h2>Raíces Cuadradas</h2>
+            <div id="square-root-questions"></div>
+            <div class="button-container">
+                <button id="check-square-root-btn" class="btn-primary">Verificar</button>
+            </div>
+        </section>
+
+        <section id="results-section" class="container-basic-border hidden">
+            <h2>Resultados</h2>
+            <div id="results-content"></div>
+            <div class="button-container">
+                <button id="retry-btn" class="btn-secondary">Repetir errores</button>
+                <button id="restart-btn" class="btn-primary">Reiniciar</button>
+            </div>
+        </section>
+
+        <section id="congrats-section" class="container-basic-border hidden">
+            <h2>¡Felicitaciones!</h2>
+            <p>Has aprendido todas las raíces perfectas correctamente.</p>
+            <div class="button-container">
+                <button id="new-game-btn" class="btn-primary">Nuevo juego</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-basic-border container-basic-center">
+        <p>&copy; 2023 Raíces Perfectas | <span class="legal-text">Aprende matemáticas de forma divertida</span></p>
+    </footer>
+</body>
+
+</html>
